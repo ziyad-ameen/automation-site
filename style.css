@@ -18,8 +18,35 @@ section {
     margin: 50px 0;
 }
 
+form {
+    max-width: 600px;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
 button {
     padding: 12px 20px;
     font-size: 1rem;
     cursor: pointer;
+}
+
+#responseMessage {
+    margin-top: 25px;
+    font-weight: bold;
 }

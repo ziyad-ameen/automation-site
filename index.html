@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,20 +24,45 @@
     <main>
 
         <section>
-            <h2>What I Do</h2>
+            <h2>What do you need to automate?</h2>
 
             <p>
-                I design and connect workflows using modern
-                automation tools and APIs.
+                Tell me about a repetitive task or process
+                you'd like to improve.
             </p>
-        </section>
 
-        <section>
-            <h2>Let's Work Together</h2>
+            <form id="contactForm">
 
-            <button id="contactButton">
-                Contact Me
-            </button>
+                <div>
+                    <label for="name">Your name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                    >
+                </div>
+
+                <div>
+                    <label for="message">What would you like to automate?</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+            <p id="responseMessage"></p>
+
         </section>
 
     </main>
@@ -44,4 +70,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
