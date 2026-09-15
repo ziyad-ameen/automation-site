@@ -1,18 +1,34 @@
 const contactForm = document.getElementById("contactForm");
 const responseMessage = document.getElementById("responseMessage");
+const submitButton = document.getElementById("submitButton");
+
+const WORKER_URL =
+    "https://automation-site-proxy.ameenziyad9.workers.dev/";
+
 
 contactForm.addEventListener("submit", async function (event) {
 
     event.preventDefault();
 
-    const name = document.getElementById("name").value;
-    const message = document.getElementById("message").value;
 
-    responseMessage.textContent = "Sending...";
+    const name =
+        document.getElementById("name").value.trim();
+
+    const message =
+        document.getElementById("message").value.trim();
+
+
+    responseMessage.textContent = "Sending your enquiry...";
+
+    submitButton.disabled = true;
+
+    submitButton.textContent = "Sending...";
+
 
     try {
 
-        const response = await fetch("https://automation-site-proxy.ameenziyad9.workers.dev/", {
+        const response = await fetch(WORKER_URL, {
+
             method: "POST",
 
             headers: {
@@ -23,27 +39,63 @@ contactForm.addEventListener("submit", async function (event) {
                 name: name,
                 message: message
             })
+
         });
 
-        const data = await response.json();
+
+        let data;
+
+        try {
+
+            data = await response.json();
+
+        } catch (error) {
+
+            throw new Error(
+                "The server returned an invalid response."
+            );
+
+        }
+
 
         if (!response.ok || !data.success) {
-            responseMessage.textContent =
+
+            const errorMessage =
                 data.errors?.join(" ") ||
                 data.error ||
                 "Sorry, something went wrong.";
 
+            responseMessage.textContent =
+                errorMessage;
+
             return;
         }
 
-        responseMessage.textContent = data.reply;
+
+        responseMessage.textContent =
+            data.reply ||
+            "Thanks for reaching out. Your enquiry has been received.";
+
+
+        contactForm.reset();
+
 
     } catch (error) {
 
-        console.error(error);
+        console.error(
+            "Website request failed:",
+            error
+        );
 
         responseMessage.textContent =
-            "Sorry, something went wrong. Please try again.";
+            "Sorry, we couldn't send your enquiry right now. Please try again or contact me directly by email or WhatsApp.";
+
+    } finally {
+
+        submitButton.disabled = false;
+
+        submitButton.textContent =
+            "Send enquiry";
 
     }
 
