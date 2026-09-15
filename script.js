@@ -12,7 +12,7 @@ contactForm.addEventListener("submit", async function (event) {
 
     try {
 
-        const response = await fetch("https://liberal-millipede.pikapod.net/webhook-test/261a66a0-6999-46d6-9985-4108f94a8af6", {
+        const response = await fetch("https://automation-site-proxy.ameenziyad9.workers.dev/", {
             method: "POST",
 
             headers: {
@@ -26,6 +26,15 @@ contactForm.addEventListener("submit", async function (event) {
         });
 
         const data = await response.json();
+
+        if (!response.ok || !data.success) {
+            responseMessage.textContent =
+                data.errors?.join(" ") ||
+                data.error ||
+                "Sorry, something went wrong.";
+
+            return;
+        }
 
         responseMessage.textContent = data.reply;
 
