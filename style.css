@@ -55,6 +55,11 @@ textarea {
     font: inherit;
 }
 
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
 
 /* =========================================
    Layout
@@ -74,8 +79,8 @@ textarea {
 }
 
 .section-alt {
-    background: var(--surface-dark);
     color: #f4f5f6;
+    background: var(--surface-dark);
 }
 
 
@@ -106,13 +111,25 @@ textarea {
 }
 
 .brand {
+    flex-shrink: 0;
+
     font-size: 1.05rem;
     font-weight: 800;
+
     letter-spacing: -0.02em;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 22px;
 }
 
 .header-link {
     color: var(--muted);
+
     font-size: 0.95rem;
     font-weight: 600;
 
@@ -124,6 +141,56 @@ textarea {
 .header-link:hover {
     color: var(--text);
     transform: translateY(-1px);
+}
+
+.language-toggle {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 3px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: 999px;
+}
+
+.language-button {
+    min-width: 38px;
+    min-height: 32px;
+
+    padding: 5px 9px;
+
+    color: var(--muted);
+    background: transparent;
+
+    border: 0;
+    border-radius: 999px;
+
+    font-size: 0.74rem;
+    font-weight: 800;
+
+    letter-spacing: 0.04em;
+
+    cursor: pointer;
+
+    transition:
+        color 0.2s ease,
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.language-button:hover {
+    color: var(--text);
+}
+
+.language-button.active {
+    color: #ffffff;
+    background: var(--text);
+}
+
+.language-button:active {
+    transform: scale(0.96);
 }
 
 
@@ -143,6 +210,10 @@ textarea {
     text-transform: uppercase;
 }
 
+html[dir="rtl"] .eyebrow {
+    letter-spacing: 0;
+}
+
 .hero h1 {
     max-width: 900px;
 
@@ -157,6 +228,19 @@ textarea {
     line-height: 0.98;
 
     letter-spacing: -0.065em;
+}
+
+html[dir="rtl"] .hero h1 {
+    max-width: 1000px;
+
+    font-family:
+        "Noto Sans Arabic",
+        "Segoe UI",
+        Tahoma,
+        Arial,
+        sans-serif;
+
+    letter-spacing: -0.04em;
 }
 
 .hero h1 span {
@@ -180,7 +264,7 @@ textarea {
 }
 
 .section-heading {
-    max-width: 720px;
+    max-width: 760px;
 
     margin-bottom: 55px;
 }
@@ -197,6 +281,18 @@ textarea {
     line-height: 1.05;
 
     letter-spacing: -0.045em;
+}
+
+html[dir="rtl"] .section-heading h2,
+html[dir="rtl"] .contact-intro h2 {
+    font-family:
+        "Noto Sans Arabic",
+        "Segoe UI",
+        Tahoma,
+        Arial,
+        sans-serif;
+
+    letter-spacing: -0.025em;
 }
 
 .section-heading p:not(.eyebrow) {
@@ -269,6 +365,14 @@ textarea {
     transform: translateY(-2px);
 }
 
+.button:disabled {
+    opacity: 0.7;
+
+    cursor: wait;
+
+    transform: none;
+}
+
 .button-primary {
     color: #ffffff;
     background: var(--accent);
@@ -294,6 +398,10 @@ textarea {
     content: " →";
 }
 
+html[dir="rtl"] .text-link::after {
+    content: " ←";
+}
+
 
 /* =========================================
    Services
@@ -303,7 +411,7 @@ textarea {
     display: grid;
 
     grid-template-columns:
-        repeat(3, minmax(0, 1fr));
+        repeat(2, minmax(0, 1fr));
 
     gap: 20px;
 }
@@ -334,7 +442,7 @@ textarea {
 }
 
 .service-number {
-    margin-bottom: 60px;
+    margin-bottom: 48px;
 
     color: var(--accent);
 
@@ -349,6 +457,21 @@ textarea {
     line-height: 1.2;
 
     letter-spacing: -0.025em;
+}
+
+html[dir="rtl"] .service-card h3,
+html[dir="rtl"] .process-step h3,
+html[dir="rtl"] .service-card p,
+html[dir="rtl"] .service-card li,
+html[dir="rtl"] .pricing-content,
+html[dir="rtl"] .contact-intro,
+html[dir="rtl"] .contact-card {
+    font-family:
+        "Noto Sans Arabic",
+        "Segoe UI",
+        Tahoma,
+        Arial,
+        sans-serif;
 }
 
 .service-card p {
@@ -372,6 +495,16 @@ textarea {
     color: #44494e;
 
     font-size: 0.92rem;
+}
+
+.service-card li:first-child {
+    border-top: 0;
+
+    padding-top: 0;
+}
+
+html[dir="rtl"] .service-card ul {
+    padding-right: 0;
 }
 
 
@@ -504,6 +637,7 @@ textarea {
 .contact-link {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 
     padding: 18px;
 
@@ -533,6 +667,44 @@ textarea {
 
     letter-spacing: 0.1em;
     text-transform: uppercase;
+}
+
+html[dir="rtl"] .contact-label {
+    letter-spacing: 0;
+}
+
+.contact-link-note {
+    margin-top: 5px;
+
+    color: var(--muted);
+
+    font-size: 0.9rem;
+}
+
+.whatsapp-link {
+    gap: 3px;
+}
+
+.whatsapp-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 34px;
+    height: 34px;
+
+    margin-top: 4px;
+
+    color: var(--accent);
+}
+
+.whatsapp-icon svg {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    fill: currentColor;
 }
 
 .contact-card {
@@ -641,7 +813,7 @@ textarea:focus {
 .site-footer {
     padding: 28px 0;
 
-    color: #999fA5;
+    color: #999fa5;
     background: var(--surface-dark);
 
     border-top: 1px solid var(--border-dark);
@@ -655,6 +827,25 @@ textarea:focus {
     gap: 20px;
 
     font-size: 0.85rem;
+}
+
+
+/* =========================================
+   Focus states
+   ========================================= */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid rgba(
+        29,
+        92,
+        255,
+        0.35
+    );
+
+    outline-offset: 3px;
 }
 
 
@@ -706,6 +897,10 @@ textarea:focus {
 
     .header-inner {
         min-height: 64px;
+    }
+
+    .header-actions {
+        gap: 10px;
     }
 
     .header-link {
