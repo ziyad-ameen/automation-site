@@ -35,16 +35,16 @@ const translations = {
             "Worldwide",
 
         heroTitle:
-            'Turn repetitive work into <span>reliable automation.</span>',
+            "Turn repetitive work into automation that runs itself.",
 
         heroText:
-            "I build practical automations that connect the tools your business already uses—helping you reduce repetitive work, improve consistency, and spend more time on what actually matters.",
+            "I connect the tools your business already relies on into dependable automations—cutting repetitive work, tightening consistency, and giving you back time for what matters most.",
 
         heroPrimary:
             "Tell me what you're trying to automate",
 
         heroSecondary:
-            "Explore services",
+            "See what I build",
 
 
         servicesEyebrow:
@@ -54,14 +54,14 @@ const translations = {
             "Automation designed around your workflow.",
 
         servicesIntro:
-            "I connect the tools, data, and processes your business already relies on into practical workflows built around the way you work.",
+            "I connect the tools, data, and processes your business already relies on into practical workflows built around how you actually work.",
 
 
         service1Title:
             "Google Workspace Automation",
 
         service1Text:
-            "Automate repetitive work across Sheets, Gmail, Drive, and other Google Workspace tools.",
+            "Automate the repetitive work across Sheets, Gmail, Drive, and the rest of Google Workspace.",
 
         service1Item1:
             "Sheets & data workflows",
@@ -80,7 +80,7 @@ const translations = {
             "Messaging Automation",
 
         service2Text:
-            "Build WhatsApp and Telegram workflows for enquiries, notifications, follow-ups, routing, and other customer interactions.",
+            "Build WhatsApp and Telegram workflows for enquiries, notifications, follow-ups, and routing, so conversations keep moving without manual work.",
 
         service2Item1:
             "WhatsApp workflows",
@@ -99,7 +99,7 @@ const translations = {
             "Website & Web App Automation",
 
         service3Text:
-            "Connect your website or web app to the systems behind it—capturing leads, moving data, triggering actions, and keeping operations in sync.",
+            "Connect your website or web app to the systems behind it, capturing leads, moving data, and keeping operations in sync.",
 
         service3Item1:
             "Lead capture",
@@ -118,7 +118,7 @@ const translations = {
             "AI Agents & Assistants",
 
         service4Text:
-            "Build practical AI agents that can interpret requests, use connected tools, and support defined business workflows within clear rules and boundaries.",
+            "Build practical AI agents that interpret requests, use your connected tools, and operate within clear rules and boundaries.",
 
         service4Item1:
             "Enquiry assistants",
@@ -143,19 +143,19 @@ const translations = {
             "Describe the problem",
 
         process1Text:
-            "Tell me what you currently do manually, which tools are involved, and where the process becomes repetitive or frustrating.",
+            "Tell me what you currently do manually, which tools are involved, and where it gets repetitive or frustrating.",
 
         process2Title:
             "Design the workflow",
 
         process2Text:
-            "I identify practical automation opportunities and design a workflow around your existing systems and requirements.",
+            "I map out a practical automation built around your existing systems and requirements.",
 
         process3Title:
             "Deploy and maintain",
 
         process3Text:
-            "Once implemented, the workflow can be monitored and maintained as your needs evolve.",
+            "Once it's live, the workflow can be monitored and maintained as your needs evolve.",
 
 
         pricingEyebrow:
@@ -164,14 +164,26 @@ const translations = {
         pricingTitle:
             "Built around the complexity of your setup.",
 
-        pricingText1:
-            "Every automation project is different. Pricing depends on factors such as workflow complexity, the systems that need to be integrated, and your preferred deployment platform.",
+        pricingIntro:
+            "Every automation project is different, so every quote is built around what you actually need.",
 
-        pricingText2:
-            "Ongoing maintenance may be available for workflow monitoring, database backups, updates, troubleshooting, and other operational needs.",
+        pricingFactorsLabel:
+            "What shapes the price",
 
-        pricingText3:
-            "The goal is to build something practical, maintainable, and appropriate for your actual workflow—not to force every business into the same package.",
+        pricingFactor1:
+            "Workflow complexity",
+
+        pricingFactor2:
+            "Systems to integrate",
+
+        pricingFactor3:
+            "Deployment platform",
+
+        pricingMaintenance:
+            "Ongoing maintenance is available too—monitoring, backups, updates, and troubleshooting as your needs evolve.",
+
+        pricingPhilosophy:
+            "The goal is something practical and maintainable for your actual workflow, not a package that forces your business to fit it.",
 
 
         contactEyebrow:
@@ -239,7 +251,7 @@ const translations = {
             "Please describe what you'd like to automate.",
 
         footerTagline:
-            "Practical automation. Worldwide."
+            "Practical automation, worldwide."
 
     },
 
@@ -262,16 +274,16 @@ const translations = {
             "عالميًا",
 
         heroTitle:
-            'حوّل العمل المتكرر إلى <span>أتمتة موثوقة.</span>',
+            "حوّل العمل المتكرر إلى أتمتة تعمل من تلقاء نفسها.",
 
         heroText:
-            "أبني حلول أتمتة عملية تربط الأدوات التي يستخدمها عملك بالفعل، لتقليل العمل المتكرر، وتحسين الاتساق، ومنحك وقتًا أكبر لما يهم فعلًا.",
+            "أربط الأدوات التي يعتمد عليها عملك بالفعل ضمن أتمتة موثوقة تقلّل العمل المتكرر، وتُحسّن الاتساق، وتمنحك وقتًا أكبر لما يهم فعلاً.",
 
         heroPrimary:
             "أخبرني بما تريد أتمتته",
 
         heroSecondary:
-            "استعرض الخدمات",
+            "استعرض ما أبنيه",
 
 
         servicesEyebrow:
@@ -281,14 +293,14 @@ const translations = {
             "أتمتة مصممة حول طريقة عملك.",
 
         servicesIntro:
-            "أربط الأدوات والبيانات والعمليات التي يعتمد عليها عملك في سير عمل عملي مصمم وفق احتياجاتك وطريقة عملك.",
+            "أربط الأدوات والبيانات والعمليات التي يعتمد عليها عملك في سير عمل عملي مصمم وفق طريقة عملك الفعلية.",
 
 
         service1Title:
             "أتمتة Google Workspace",
 
         service1Text:
-            "أتمت العمل المتكرر عبر Sheets وGmail وDrive وغيرها من أدوات Google Workspace.",
+            "أتمتة العمل المتكرر عبر Sheets وGmail وDrive وبقية أدوات Google Workspace.",
 
         service1Item1:
             "سير عمل Sheets والبيانات",
@@ -307,7 +319,7 @@ const translations = {
             "أتمتة المراسلة",
 
         service2Text:
-            "أنشئ سير عمل عبر WhatsApp وTelegram للاستفسارات والإشعارات والمتابعة والتوجيه وغيرها من تفاعلات العملاء.",
+            "أنشئ سير عمل عبر WhatsApp وTelegram للاستفسارات والإشعارات والمتابعة والتوجيه، بحيث تستمر المحادثات دون عمل يدوي.",
 
         service2Item1:
             "سير عمل WhatsApp",
@@ -326,7 +338,7 @@ const translations = {
             "أتمتة المواقع وتطبيقات الويب",
 
         service3Text:
-            "أربط موقعك أو تطبيق الويب بالأنظمة التي تقف خلفه لجمع العملاء المحتملين، ونقل البيانات، وتشغيل الإجراءات، والحفاظ على ترابط العمليات.",
+            "أربط موقعك أو تطبيق الويب بالأنظمة التي تقف خلفه لجمع العملاء المحتملين، ونقل البيانات، والحفاظ على ترابط العمليات.",
 
         service3Item1:
             "جمع العملاء المحتملين",
@@ -391,14 +403,26 @@ const translations = {
         pricingTitle:
             "يُبنى على تعقيد إعدادك.",
 
-        pricingText1:
-            "كل مشروع أتمتة مختلف. يعتمد التسعير على عوامل مثل تعقيد سير العمل، والأنظمة التي تحتاج إلى التكامل، ومنصة النشر المفضلة لديك.",
+        pricingIntro:
+            "كل مشروع أتمتة مختلف عن الآخر، لذلك يُصمَّم كل عرض سعر وفق احتياجاتك الفعلية.",
 
-        pricingText2:
-            "قد تتوفر صيانة مستمرة لمراقبة سير العمل، والنسخ الاحتياطية لقواعد البيانات، والتحديثات، ومعالجة الأعطال، وغيرها من الاحتياجات التشغيلية.",
+        pricingFactorsLabel:
+            "ما الذي يحدد السعر",
 
-        pricingText3:
-            "الهدف هو بناء حل عملي وقابل للصيانة ومناسب لسير عملك الفعلي، وليس فرض حزمة واحدة على كل نشاط تجاري.",
+        pricingFactor1:
+            "تعقيد سير العمل",
+
+        pricingFactor2:
+            "الأنظمة المطلوب دمجها",
+
+        pricingFactor3:
+            "منصة النشر",
+
+        pricingMaintenance:
+            "تتوفر أيضًا صيانة مستمرة تشمل المراقبة والنسخ الاحتياطي والتحديثات ومعالجة الأعطال بحسب تطوّر احتياجاتك.",
+
+        pricingPhilosophy:
+            "الهدف هو بناء حل عملي وقابل للصيانة يناسب سير عملك الفعلي، لا باقة جاهزة تفرض على عملك أن يتكيّف معها.",
 
 
         contactEyebrow:
@@ -466,7 +490,7 @@ const translations = {
             "يرجى وصف ما ترغب في أتمتته.",
 
         footerTagline:
-            "أتمتة عملية. حول العالم."
+            "أتمتة عملية، حول العالم."
 
     }
 
