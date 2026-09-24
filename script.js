@@ -90,7 +90,7 @@ contactForm?.addEventListener("submit", async (event) => {
         const response = await fetch(WORKER_URL, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ name, message, language: currentLanguage })
+            body: JSON.stringify({ name, message })
         });
 
         let data;
