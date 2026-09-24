@@ -84,9 +84,10 @@ button { border: 0; }
     border-radius: 999px; background: rgba(255, 253, 248, 0.78);
 }
 .language-button {
-    min-width: 34px; padding: 6px 9px; border-radius: 999px; background: transparent; color: var(--muted);
+    display: inline-flex; align-items: center; justify-content: center; min-width: 34px; padding: 6px 9px; border-radius: 999px; background: transparent; color: var(--muted);
     cursor: pointer; font-size: 0.73rem; font-weight: 800; letter-spacing: 0.07em;
 }
+.language-button:hover, .language-button:focus-visible { color: var(--ink); }
 .language-button.active { background: var(--dark); color: var(--white); }
 
 .hero { position: relative; overflow: clip; padding: 105px 0 125px; }

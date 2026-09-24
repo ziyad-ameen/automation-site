@@ -1,438 +1,401 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+
+<html dir="ltr" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ziyad Automates builds practical business automations for leads, admin, messaging, websites, Google Workspace, and AI-assisted workflows.">
-    <meta name="theme-color" content="#f5f1e8">
-    <meta property="og:title" content="Ziyad Automates | Practical Business Automation">
-    <meta property="og:description" content="Turn repetitive business work into connected, dependable workflows.">
-    <meta property="og:type" content="website">
-    <title>Ziyad Automates | Practical Business Automation</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600;6..72,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <a class="skip-link" href="#main" data-i18n="skipLink">Skip to content</a>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Ziyad Automates builds practical business automations for leads, admin, messaging, websites, Google Workspace, and AI-assisted workflows." name="description"/>
+<meta content="#f5f1e8" name="theme-color"/>
 
-    <header class="site-header" id="top">
-        <div class="container header-inner">
-            <a href="#top" class="brand" data-i18n="brand" aria-label="Ziyad Automates">Ziyad Automates</a>
 
-            <nav class="site-nav" aria-label="Primary navigation" data-i18n-aria-label="navAria">
-                <a href="#problems" data-i18n="navProblems">Problems</a>
-                <a href="#services" data-i18n="navServices">Services</a>
-                <a href="#examples" data-i18n="navExamples">Examples</a>
-                <a href="#process" data-i18n="navProcess">Process</a>
-                <a href="#pricing" data-i18n="navPricing">Pricing</a>
-            </nav>
 
-            <div class="header-actions">
-                <a href="#contact" class="header-cta" data-i18n="headerCta">Start a conversation</a>
-                <div class="language-toggle" aria-label="Language selection">
-                    <button type="button" class="language-button active" data-language="en" aria-pressed="true">EN</button>
-                    <button type="button" class="language-button" data-language="ar" aria-pressed="false">AR</button>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <main id="main">
-        <section class="hero">
-            <div class="container hero-grid">
-                <div class="hero-copy">
-                    <p class="eyebrow" data-i18n="heroEyebrow">Practical business automation</p>
-                    <h1 data-i18n="heroTitle">Make the repetitive parts of work <em>disappear.</em></h1>
-                    <p class="hero-text" data-i18n="heroText">I connect the tools you already use so leads, messages, data, documents, and routine actions move automatically instead of through copy-paste and manual handoffs.</p>
-
-                    <div class="hero-actions">
-                        <a href="#contact" class="button button-primary" data-i18n="heroPrimary">Tell me what you want to automate</a>
-                        <a href="#examples" class="text-link" data-i18n="heroSecondary">See example workflows</a>
-                    </div>
-
-                    <div class="hero-points" aria-label="Benefits" data-i18n-aria-label="benefitsAria">
-                        <span data-i18n="heroPoint1">Less admin</span>
-                        <span data-i18n="heroPoint2">Faster follow-up</span>
-                        <span data-i18n="heroPoint3">Connected systems</span>
-                    </div>
-                </div>
-
-                <div class="hero-visual" aria-label="Example automation workflow" data-i18n-aria-label="visualAria">
-                    <div class="workflow-window">
-                        <div class="workflow-topbar">
-                            <span class="workflow-label" data-i18n="visualLabel">Workflow preview</span>
-                            <span class="workflow-status"><span aria-hidden="true"></span><span data-i18n="visualLive">Example</span></span>
-                        </div>
-
-                        <div class="workflow-heading">
-                            <p class="eyebrow" data-i18n="visualEyebrow">A typical enquiry workflow</p>
-                            <h2 data-i18n="visualTitle">New enquiry → organised follow-up</h2>
-                        </div>
-
-                        <div class="workflow-steps">
-                            <article class="workflow-step">
-                                <span class="step-number">01</span>
-                                <div>
-                                    <h3 data-i18n="visualStep1Title">Incoming enquiry</h3>
-                                    <p data-i18n="visualStep1Text">A customer sends a message or fills a form.</p>
-                                </div>
-                            </article>
-                            <div class="workflow-connector" aria-hidden="true"></div>
-                            <article class="workflow-step">
-                                <span class="step-number">02</span>
-                                <div>
-                                    <h3 data-i18n="visualStep2Title">Capture &amp; organise</h3>
-                                    <p data-i18n="visualStep2Text">Important details are extracted and stored.</p>
-                                </div>
-                            </article>
-                            <div class="workflow-connector" aria-hidden="true"></div>
-                            <article class="workflow-step">
-                                <span class="step-number">03</span>
-                                <div>
-                                    <h3 data-i18n="visualStep3Title">Trigger the next action</h3>
-                                    <p data-i18n="visualStep3Text">The right person, system, or follow-up is notified.</p>
-                                </div>
-                            </article>
-                        </div>
-
-                        <div class="workflow-footer">
-                            <span class="workflow-line" aria-hidden="true"></span>
-                            <span data-i18n="visualFooter">The routine work happens in the background.</span>
-                        </div>
-                    </div>
-                    <div class="floating-card floating-card-one">
-                        <span data-i18n="floatOneLabel">Manual steps</span>
-                        <strong data-i18n="floatOneValue">↓ Fewer handoffs</strong>
-                    </div>
-                    <div class="floating-card floating-card-two">
-                        <span data-i18n="floatTwoLabel">Connected</span>
-                        <strong data-i18n="floatTwoValue">Tools + data + actions</strong>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="problems" class="section section-soft">
-            <div class="container">
-                <div class="section-heading section-heading-split">
-                    <div>
-                        <p class="eyebrow" data-i18n="problemsEyebrow">What I help remove</p>
-                        <h2 data-i18n="problemsTitle">Most useful automation starts with a boring problem.</h2>
-                    </div>
-                    <p data-i18n="problemsIntro">You do not need to arrive with a technical brief. Start with the task that keeps getting repeated, delayed, copied, checked, or forgotten.</p>
-                </div>
-
-                <div class="problem-grid">
-                    <article class="problem-card">
-                        <span class="problem-index">01</span>
-                        <h3 data-i18n="problem1Title">Leads slipping through the cracks</h3>
-                        <p data-i18n="problem1Text">Capture enquiries, organise the details, notify the right person, and trigger follow-up without relying on memory.</p>
-                        <button class="inline-cta" type="button" data-service="lead" data-i18n="problemCta">Ask about this ↗</button>
-                    </article>
-                    <article class="problem-card">
-                        <span class="problem-index">02</span>
-                        <h3 data-i18n="problem2Title">Too much admin and copy-paste</h3>
-                        <p data-i18n="problem2Text">Move information between forms, spreadsheets, documents, email, and other tools automatically.</p>
-                        <button class="inline-cta" type="button" data-service="admin" data-i18n="problemCta">Ask about this ↗</button>
-                    </article>
-                    <article class="problem-card">
-                        <span class="problem-index">03</span>
-                        <h3 data-i18n="problem3Title">The same customer messages every day</h3>
-                        <p data-i18n="problem3Text">Handle routine questions, routing, notifications, and next steps with practical messaging workflows.</p>
-                        <button class="inline-cta" type="button" data-service="Messaging Automation" data-i18n="problemCta">Ask about this ↗</button>
-                    </article>
-                    <article class="problem-card">
-                        <span class="problem-index">04</span>
-                        <h3 data-i18n="problem4Title">Information living in too many places</h3>
-                        <p data-i18n="problem4Text">Connect websites, web apps, spreadsheets, email, messaging, APIs, and AI so the workflow stays in sync.</p>
-                        <button class="inline-cta" type="button" data-service="systems" data-i18n="problemCta">Ask about this ↗</button>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="services" class="section">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="eyebrow" data-i18n="servicesEyebrow">What I build</p>
-                    <h2 data-i18n="servicesTitle">The tools are different. The goal is the same: less manual work.</h2>
-                    <p data-i18n="servicesIntro">These are the main capabilities I use to turn a repetitive process into a dependable workflow.</p>
-                </div>
-
-                <div class="service-grid">
-                    <article class="service-card">
-                        <div class="service-topline"><span class="service-number">01</span><span class="service-symbol" aria-hidden="true">↗</span></div>
-                        <h3 data-i18n="service1Title">Google Workspace Automation</h3>
-                        <p data-i18n="service1Text">Automate everyday work across Sheets, Gmail, Drive, Forms, and documents.</p>
-                        <div class="service-fit"><span data-i18n="fitLabel">Useful for</span><strong data-i18n="service1Fit">Admin, reporting, documents, internal operations</strong></div>
-                        <ul>
-                            <li data-i18n="service1Item1">Sheets &amp; data workflows</li>
-                            <li data-i18n="service1Item2">Gmail automation</li>
-                            <li data-i18n="service1Item3">Drive &amp; document workflows</li>
-                            <li data-i18n="service1Item4">AI-assisted processes</li>
-                        </ul>
-                        <button class="service-cta" type="button" data-service="Google Workspace Automation" data-i18n="serviceCta">Discuss this service</button>
-                    </article>
-
-                    <article class="service-card service-card-accent">
-                        <div class="service-topline"><span class="service-number">02</span><span class="service-symbol" aria-hidden="true">↗</span></div>
-                        <h3 data-i18n="service2Title">Messaging Automation</h3>
-                        <p data-i18n="service2Text">Connect customer conversations to the right actions with practical WhatsApp and Telegram workflows.</p>
-                        <div class="service-fit"><span data-i18n="fitLabel">Useful for</span><strong data-i18n="service2Fit">Enquiries, lead routing, reminders, notifications</strong></div>
-                        <ul>
-                            <li data-i18n="service2Item1">WhatsApp workflows</li>
-                            <li data-i18n="service2Item2">Telegram bots</li>
-                            <li data-i18n="service2Item3">Automated replies &amp; routing</li>
-                            <li data-i18n="service2Item4">Custom business logic</li>
-                        </ul>
-                        <button class="service-cta" type="button" data-service="Messaging Automation" data-i18n="serviceCta">Discuss this service</button>
-                    </article>
-
-                    <article class="service-card">
-                        <div class="service-topline"><span class="service-number">03</span><span class="service-symbol" aria-hidden="true">↗</span></div>
-                        <h3 data-i18n="service3Title">Website &amp; Web App Automation</h3>
-                        <p data-i18n="service3Text">Connect your website or web app to the systems behind it, so leads, records, notifications, and actions stay aligned.</p>
-                        <div class="service-fit"><span data-i18n="fitLabel">Useful for</span><strong data-i18n="service3Fit">Lead capture, client portals, internal tools, integrations</strong></div>
-                        <ul>
-                            <li data-i18n="service3Item1">Lead capture</li>
-                            <li data-i18n="service3Item2">API integrations</li>
-                            <li data-i18n="service3Item3">Backend workflows</li>
-                            <li data-i18n="service3Item4">Data handling &amp; notifications</li>
-                        </ul>
-                        <button class="service-cta" type="button" data-service="Website & Web App Automation" data-i18n="serviceCta">Discuss this service</button>
-                    </article>
-
-                    <article class="service-card">
-                        <div class="service-topline"><span class="service-number">04</span><span class="service-symbol" aria-hidden="true">↗</span></div>
-                        <h3 data-i18n="service4Title">AI Assistants &amp; Smart Workflows</h3>
-                        <p data-i18n="service4Text">Use AI where it adds practical value: understanding requests, working with connected tools, and supporting defined business processes.</p>
-                        <div class="service-fit"><span data-i18n="fitLabel">Useful for</span><strong data-i18n="service4Fit">Enquiries, knowledge work, classification, task routing</strong></div>
-                        <ul>
-                            <li data-i18n="service4Item1">Enquiry assistants</li>
-                            <li data-i18n="service4Item2">Knowledge &amp; workflow assistants</li>
-                            <li data-i18n="service4Item3">Task routing</li>
-                            <li data-i18n="service4Item4">AI + automation workflows</li>
-                        </ul>
-                        <button class="service-cta" type="button" data-service="AI Assistants & Smart Workflows" data-i18n="serviceCta">Discuss this service</button>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="examples" class="section examples-section">
-            <div class="container">
-                <div class="section-heading section-heading-split">
-                    <div>
-                        <p class="eyebrow" data-i18n="examplesEyebrow">Typical workflows</p>
-                        <h2 data-i18n="examplesTitle">What an automation can look like in practice.</h2>
-                    </div>
-                    <p data-i18n="examplesIntro">These are illustrative examples, not fixed packages. The final workflow is shaped around the tools and process you already have.</p>
-                </div>
-
-                <div class="examples-grid">
-                    <article class="example-card">
-                        <div class="example-heading"><span class="example-icon">01</span><span data-i18n="example1Tag">Lead capture</span></div>
-                        <h3 data-i18n="example1Title">Website enquiry → organised follow-up</h3>
-                        <div class="flow-list">
-                            <span data-i18n="example1Step1">Website form</span><b>→</b><span data-i18n="example1Step2">Capture details</span><b>→</b><span data-i18n="example1Step3">Store / notify</span><b>→</b><span data-i18n="example1Step4">Follow up</span>
-                        </div>
-                        <p data-i18n="example1Text">Useful when a team receives leads but someone still has to copy the information, decide who should handle it, and remember the next step.</p>
-                    </article>
-
-                    <article class="example-card">
-                        <div class="example-heading"><span class="example-icon">02</span><span data-i18n="example2Tag">Messaging</span></div>
-                        <h3 data-i18n="example2Title">WhatsApp enquiry → routed action</h3>
-                        <div class="flow-list">
-                            <span data-i18n="example2Step1">Message</span><b>→</b><span data-i18n="example2Step2">Classify</span><b>→</b><span data-i18n="example2Step3">Route</span><b>→</b><span data-i18n="example2Step4">Reply / notify</span>
-                        </div>
-                        <p data-i18n="example2Text">Useful when staff repeatedly answer common questions, collect the same information, or manually pass conversations to the next person.</p>
-                    </article>
-
-                    <article class="example-card">
-                        <div class="example-heading"><span class="example-icon">03</span><span data-i18n="example3Tag">Documents</span></div>
-                        <h3 data-i18n="example3Title">Form submission → document → email</h3>
-                        <div class="flow-list">
-                            <span data-i18n="example3Step1">Form</span><b>→</b><span data-i18n="example3Step2">Generate</span><b>→</b><span data-i18n="example3Step3">Save</span><b>→</b><span data-i18n="example3Step4">Send</span>
-                        </div>
-                        <p data-i18n="example3Text">Useful when the same information has to be turned into documents, files, emails, or internal records over and over.</p>
-                    </article>
-
-                    <article class="example-card">
-                        <div class="example-heading"><span class="example-icon">04</span><span data-i18n="example4Tag">Reporting</span></div>
-                        <h3 data-i18n="example4Title">New data → cleaned report → notification</h3>
-                        <div class="flow-list">
-                            <span data-i18n="example4Step1">Collect</span><b>→</b><span data-i18n="example4Step2">Clean</span><b>→</b><span data-i18n="example4Step3">Summarise</span><b>→</b><span data-i18n="example4Step4">Notify</span>
-                        </div>
-                        <p data-i18n="example4Text">Useful when a person regularly prepares the same report or checks the same data before someone else can act on it.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="process" class="section section-dark process-section">
-            <div class="container">
-                <div class="section-heading dark-heading section-heading-split">
-                    <div>
-                        <p class="eyebrow" data-i18n="processEyebrow">How it works</p>
-                        <h2 data-i18n="processTitle">From manual task to working system.</h2>
-                    </div>
-                    <p data-i18n="processIntro">You bring the real-world process. I map it, design the automation, build it, test it, and refine it around the way you actually work.</p>
-                </div>
-
-                <div class="process-grid">
-                    <article class="process-step">
-                        <span class="process-number">01</span>
-                        <span class="process-tag" data-i18n="process1Tag">Understand</span>
-                        <h3 data-i18n="process1Title">Map the problem</h3>
-                        <p data-i18n="process1Text">We identify what happens manually, which tools are involved, and where time, consistency, or follow-up is being lost.</p>
-                    </article>
-                    <article class="process-step">
-                        <span class="process-number">02</span>
-                        <span class="process-tag" data-i18n="process2Tag">Design</span>
-                        <h3 data-i18n="process2Title">Design the workflow</h3>
-                        <p data-i18n="process2Text">I turn the process into clear steps, rules, integrations, and handoffs that fit your existing setup.</p>
-                    </article>
-                    <article class="process-step">
-                        <span class="process-number">03</span>
-                        <span class="process-tag" data-i18n="process3Tag">Deliver</span>
-                        <h3 data-i18n="process3Title">Build, test &amp; refine</h3>
-                        <p data-i18n="process3Text">The workflow is implemented, tested, and adjusted until it is practical to use in day-to-day operations.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="pricing" class="section pricing-section">
-            <div class="container">
-                <div class="section-heading section-heading-split">
-                    <div>
-                        <p class="eyebrow" data-i18n="pricingEyebrow">How projects are scoped</p>
-                        <h2 data-i18n="pricingTitle">Quoted around the workflow, not a rigid package.</h2>
-                    </div>
-                    <p data-i18n="pricingIntro">Every business process is different. A quote is based on the workflow, the systems involved, the number of steps, and the amount of testing or ongoing support needed.</p>
-                </div>
-
-                <div class="engagement-grid">
-                    <article class="engagement-card">
-                        <span class="engagement-number">01</span>
-                        <h3 data-i18n="engagement1Title">Single workflow</h3>
-                        <p data-i18n="engagement1Text">One repetitive process automated from start to finish.</p>
-                        <span class="engagement-use" data-i18n="engagement1Use">Good starting point for a focused bottleneck.</span>
-                    </article>
-                    <article class="engagement-card engagement-card-featured">
-                        <span class="engagement-number">02</span>
-                        <h3 data-i18n="engagement2Title">Connected system</h3>
-                        <p data-i18n="engagement2Text">Several tools and actions connected into one end-to-end workflow.</p>
-                        <span class="engagement-use" data-i18n="engagement2Use">Useful when the process crosses teams or platforms.</span>
-                    </article>
-                    <article class="engagement-card">
-                        <span class="engagement-number">03</span>
-                        <h3 data-i18n="engagement3Title">Ongoing support</h3>
-                        <p data-i18n="engagement3Text">Monitoring, troubleshooting, updates, backups, and workflow improvements as needs change.</p>
-                        <span class="engagement-use" data-i18n="engagement3Use">Available when the automation becomes part of daily operations.</span>
-                    </article>
-                </div>
-
-                <div class="pricing-note">
-                    <span class="note-mark" aria-hidden="true">✦</span>
-                    <p data-i18n="pricingNote">The aim is a practical system you can understand and keep using—not unnecessary complexity or a solution that forces your business to change how it works.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="faq" class="section section-soft faq-section">
-            <div class="container faq-layout">
-                <div class="section-heading">
-                    <p class="eyebrow" data-i18n="faqEyebrow">Before we start</p>
-                    <h2 data-i18n="faqTitle">A few practical questions.</h2>
-                    <p data-i18n="faqIntro">You do not need to understand the technology first. The first conversation is about your current process and what you want to change.</p>
-                </div>
-
-                <div class="faq-list">
-                    <details>
-                        <summary data-i18n="faq1Q">Do I need to know exactly what technology I need?</summary>
-                        <p data-i18n="faq1A">No. Explain the current process and the result you want. The technical approach can be worked out from there.</p>
-                    </details>
-                    <details>
-                        <summary data-i18n="faq2Q">Can you work with the tools we already use?</summary>
-                        <p data-i18n="faq2A">That is the starting point. The goal is usually to connect the tools already in place before introducing unnecessary new software.</p>
-                    </details>
-                    <details>
-                        <summary data-i18n="faq3Q">What kinds of businesses are a good fit?</summary>
-                        <p data-i18n="faq3A">Businesses with recurring admin, enquiries, data handling, document work, reporting, or customer messaging are often a natural fit for workflow automation.</p>
-                    </details>
-                    <details>
-                        <summary data-i18n="faq4Q">Can automation include a human step?</summary>
-                        <p data-i18n="faq4A">Yes. Good automation does not have to remove people from the process. It can prepare information, route work, ask for approval, and leave the final decision with a person.</p>
-                    </details>
-                    <details>
-                        <summary data-i18n="faq5Q">What happens after I send an enquiry?</summary>
-                        <p data-i18n="faq5A">I review the process you described, clarify the important details, and use that conversation to determine whether there is a sensible automation to build.</p>
-                    </details>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section contact-section">
-            <div class="container contact-layout">
-                <div class="contact-intro">
-                    <p class="eyebrow" data-i18n="contactEyebrow">Start a conversation</p>
-                    <h2 data-i18n="contactTitle">Tell me about the task you wish you never had to do manually again.</h2>
-                    <p data-i18n="contactIntro">You do not need a technical brief. Describe what happens today, what you would like to improve, and which tools are involved. That is enough to start.</p>
-
-                    <div class="contact-links">
-                        <a href="mailto:ameenziyad9@gmail.com" class="contact-link">
-                            <span class="contact-icon" aria-hidden="true">@</span>
-                            <span class="contact-link-copy">
-                                <span class="contact-label" data-i18n="emailLabel">Email</span>
-                                <span>ameenziyad9@gmail.com</span>
-                            </span>
-                            <span class="contact-link-arrow" aria-hidden="true">↗</span>
-                        </a>
-                        <a href="https://wa.me/601153152511" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Open WhatsApp" data-i18n-aria-label="whatsappAria" title="WhatsApp" data-i18n-title="whatsappTitle">
-                            <span class="contact-icon whatsapp-mark" aria-hidden="true">◌</span>
-                            <span class="contact-link-copy">
-                                <span class="contact-label" data-i18n="whatsappLabel">WhatsApp</span>
-                                <span data-i18n="whatsappNote">Message me directly</span>
-                            </span>
-                            <span class="contact-link-arrow" aria-hidden="true">↗</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="contact-card">
-                    <div class="contact-card-top">
-                        <span class="contact-card-label" data-i18n="formEyebrow">Project enquiry</span>
-                        <span class="contact-card-status"><span aria-hidden="true"></span><span data-i18n="formStatus">You can describe it in plain language</span></span>
-                    </div>
-
-                    <form id="contactForm" novalidate>
-                        <div class="form-group">
-                            <label for="name" data-i18n="nameLabel">Your name</label>
-                            <input type="text" id="name" name="name" maxlength="100" autocomplete="name" required placeholder="Your name" data-i18n-placeholder="namePlaceholder">
-                        </div>
-                        <div class="form-group">
-                            <label for="message" data-i18n="messageLabel">What would you like to automate?</label>
-                            <textarea id="message" name="message" rows="8" maxlength="5000" required placeholder="For example: I receive customer enquiries through WhatsApp and manually move the details into a spreadsheet..." data-i18n-placeholder="messagePlaceholder"></textarea>
-                            <p class="field-hint" data-i18n="fieldHint">No technical explanation needed. Just describe the current process in your own words.</p>
-                        </div>
-                        <button type="submit" id="submitButton" class="button button-primary button-full" data-i18n="submitButton">Send enquiry</button>
-                        <p id="responseMessage" class="response-message" aria-live="polite"></p>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container footer-inner">
-            <p>© <span id="currentYear"></span> <span data-i18n="brand">Ziyad Automates</span></p>
-            <p data-i18n="footerTagline">Practical automation. Built around your workflow.</p>
-        </div>
-    </footer>
-
-    <script src="script.js" defer></script>
+<title>Ziyad Automates | Practical Business Automation</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&amp;family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600;6..72,700&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+<link href="https://ziyad-automates.com/" rel="canonical"/><link href="https://ziyad-automates.com/" hreflang="en" rel="alternate"/><link href="https://ziyad-automates.com/ar/" hreflang="ar" rel="alternate"/><link href="https://ziyad-automates.com/" hreflang="x-default" rel="alternate"/><meta content="Ziyad Automates | Practical Business Automation" property="og:title"/><meta content="Ziyad Automates builds practical business automations for leads, admin, messaging, websites, Google Workspace, and AI-assisted workflows." property="og:description"/><meta content="website" property="og:type"/><meta content="https://ziyad-automates.com/" property="og:url"/><meta content="en_US" property="og:locale"/><meta content="ar_AR" property="og:locale:alternate"/><meta content="Ziyad Automates" property="og:site_name"/><meta content="summary" name="twitter:card"/><meta content="Ziyad Automates | Practical Business Automation" name="twitter:title"/><meta content="Ziyad Automates builds practical business automations for leads, admin, messaging, websites, Google Workspace, and AI-assisted workflows." name="twitter:description"/><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Ziyad Automates","url":"https://ziyad-automates.com/","inLanguage":"en","description":"Ziyad Automates builds practical business automations for leads, admin, messaging, websites, Google Workspace, and AI-assisted workflows."}</script></head>
+<body dir="ltr">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="top">
+<div class="container header-inner">
+<a aria-label="Ziyad Automates" class="brand" href="/">Ziyad Automates</a>
+<nav aria-label="Primary navigation" class="site-nav">
+<a href="#problems">Problems</a>
+<a href="#services">Services</a>
+<a href="#examples">Examples</a>
+<a href="#process">Process</a>
+<a href="#pricing">Pricing</a>
+</nav>
+<div class="header-actions">
+<a class="header-cta" href="#contact">Start a conversation</a>
+<div aria-label="Language selection" class="language-toggle"><a aria-current="page" aria-label="English" class="language-button active" href="/">EN</a><a aria-label="العربية" class="language-button" href="/ar/">AR</a></div>
+</div>
+</div>
+</header>
+<main id="main">
+<section class="hero">
+<div class="container hero-grid">
+<div class="hero-copy">
+<p class="eyebrow">Practical business automation</p>
+<h1>Make the repetitive parts of work <em>disappear.</em></h1>
+<p class="hero-text">I connect the tools you already use so leads, messages, data, documents, and routine actions move automatically instead of through copy-paste and manual handoffs.</p>
+<div class="hero-actions">
+<a class="button button-primary" href="#contact">Tell me what you want to automate</a>
+<a class="text-link" href="#examples">See example workflows</a>
+</div>
+<div aria-label="Benefits" class="hero-points">
+<span>Less admin</span>
+<span>Faster follow-up</span>
+<span>Connected systems</span>
+</div>
+</div>
+<div aria-label="Example automation workflow" class="hero-visual">
+<div class="workflow-window">
+<div class="workflow-topbar">
+<span class="workflow-label">Workflow preview</span>
+<span class="workflow-status"><span aria-hidden="true"></span><span>Example</span></span>
+</div>
+<div class="workflow-heading">
+<p class="eyebrow">A typical enquiry workflow</p>
+<h2>New enquiry → organised follow-up</h2>
+</div>
+<div class="workflow-steps">
+<article class="workflow-step">
+<span class="step-number">01</span>
+<div>
+<h3>Incoming enquiry</h3>
+<p>A customer sends a message or fills a form.</p>
+</div>
+</article>
+<div aria-hidden="true" class="workflow-connector"></div>
+<article class="workflow-step">
+<span class="step-number">02</span>
+<div>
+<h3>Capture &amp; organise</h3>
+<p>Important details are extracted and stored.</p>
+</div>
+</article>
+<div aria-hidden="true" class="workflow-connector"></div>
+<article class="workflow-step">
+<span class="step-number">03</span>
+<div>
+<h3>Trigger the next action</h3>
+<p>The right person, system, or follow-up is notified.</p>
+</div>
+</article>
+</div>
+<div class="workflow-footer">
+<span aria-hidden="true" class="workflow-line"></span>
+<span>The routine work happens in the background.</span>
+</div>
+</div>
+<div class="floating-card floating-card-one">
+<span>Manual steps</span>
+<strong>↓ Fewer handoffs</strong>
+</div>
+<div class="floating-card floating-card-two">
+<span>Connected</span>
+<strong>Tools + data + actions</strong>
+</div>
+</div>
+</div>
+</section>
+<section class="section section-soft" id="problems">
+<div class="container">
+<div class="section-heading section-heading-split">
+<div>
+<p class="eyebrow">What I help remove</p>
+<h2>Most useful automation starts with a boring problem.</h2>
+</div>
+<p>You do not need to arrive with a technical brief. Start with the task that keeps getting repeated, delayed, copied, checked, or forgotten.</p>
+</div>
+<div class="problem-grid">
+<article class="problem-card">
+<span class="problem-index">01</span>
+<h3>Leads slipping through the cracks</h3>
+<p>Capture enquiries, organise the details, notify the right person, and trigger follow-up without relying on memory.</p>
+<button class="inline-cta" data-service="lead" type="button">Ask about this ↗</button>
+</article>
+<article class="problem-card">
+<span class="problem-index">02</span>
+<h3>Too much admin and copy-paste</h3>
+<p>Move information between forms, spreadsheets, documents, email, and other tools automatically.</p>
+<button class="inline-cta" data-service="admin" type="button">Ask about this ↗</button>
+</article>
+<article class="problem-card">
+<span class="problem-index">03</span>
+<h3>The same customer messages every day</h3>
+<p>Handle routine questions, routing, notifications, and next steps with practical messaging workflows.</p>
+<button class="inline-cta" data-service="Messaging Automation" type="button">Ask about this ↗</button>
+</article>
+<article class="problem-card">
+<span class="problem-index">04</span>
+<h3>Information living in too many places</h3>
+<p>Connect websites, web apps, spreadsheets, email, messaging, APIs, and AI so the workflow stays in sync.</p>
+<button class="inline-cta" data-service="systems" type="button">Ask about this ↗</button>
+</article>
+</div>
+</div>
+</section>
+<section class="section" id="services">
+<div class="container">
+<div class="section-heading">
+<p class="eyebrow">What I build</p>
+<h2>The tools are different. The goal is the same: less manual work.</h2>
+<p>These are the main capabilities I use to turn a repetitive process into a dependable workflow.</p>
+</div>
+<div class="service-grid">
+<article class="service-card">
+<div class="service-topline"><span class="service-number">01</span><span aria-hidden="true" class="service-symbol">↗</span></div>
+<h3>Google Workspace Automation</h3>
+<p>Automate everyday work across Sheets, Gmail, Drive, Forms, and documents.</p>
+<div class="service-fit"><span>Useful for</span><strong>Admin, reporting, documents, internal operations</strong></div>
+<ul>
+<li>Sheets &amp; data workflows</li>
+<li>Gmail automation</li>
+<li>Drive &amp; document workflows</li>
+<li>AI-assisted processes</li>
+</ul>
+<button class="service-cta" data-service="Google Workspace Automation" type="button">Discuss this service</button>
+</article>
+<article class="service-card service-card-accent">
+<div class="service-topline"><span class="service-number">02</span><span aria-hidden="true" class="service-symbol">↗</span></div>
+<h3>Messaging Automation</h3>
+<p>Connect customer conversations to the right actions with practical WhatsApp and Telegram workflows.</p>
+<div class="service-fit"><span>Useful for</span><strong>Enquiries, lead routing, reminders, notifications</strong></div>
+<ul>
+<li>WhatsApp workflows</li>
+<li>Telegram bots</li>
+<li>Automated replies &amp; routing</li>
+<li>Custom business logic</li>
+</ul>
+<button class="service-cta" data-service="Messaging Automation" type="button">Discuss this service</button>
+</article>
+<article class="service-card">
+<div class="service-topline"><span class="service-number">03</span><span aria-hidden="true" class="service-symbol">↗</span></div>
+<h3>Website &amp; Web App Automation</h3>
+<p>Connect your website or web app to the systems behind it, so leads, records, notifications, and actions stay aligned.</p>
+<div class="service-fit"><span>Useful for</span><strong>Lead capture, client portals, internal tools, integrations</strong></div>
+<ul>
+<li>Lead capture</li>
+<li>API integrations</li>
+<li>Backend workflows</li>
+<li>Data handling &amp; notifications</li>
+</ul>
+<button class="service-cta" data-service="Website &amp; Web App Automation" type="button">Discuss this service</button>
+</article>
+<article class="service-card">
+<div class="service-topline"><span class="service-number">04</span><span aria-hidden="true" class="service-symbol">↗</span></div>
+<h3>AI Assistants &amp; Smart Workflows</h3>
+<p>Use AI where it adds practical value: understanding requests, working with connected tools, and supporting defined business processes.</p>
+<div class="service-fit"><span>Useful for</span><strong>Enquiries, knowledge work, classification, task routing</strong></div>
+<ul>
+<li>Enquiry assistants</li>
+<li>Knowledge &amp; workflow assistants</li>
+<li>Task routing</li>
+<li>AI + automation workflows</li>
+</ul>
+<button class="service-cta" data-service="AI Assistants &amp; Smart Workflows" type="button">Discuss this service</button>
+</article>
+</div>
+</div>
+</section>
+<section class="section examples-section" id="examples">
+<div class="container">
+<div class="section-heading section-heading-split">
+<div>
+<p class="eyebrow">Typical workflows</p>
+<h2>What an automation can look like in practice.</h2>
+</div>
+<p>These are illustrative examples, not fixed packages. The final workflow is shaped around the tools and process you already have.</p>
+</div>
+<div class="examples-grid">
+<article class="example-card">
+<div class="example-heading"><span class="example-icon">01</span><span>Lead capture</span></div>
+<h3>Website enquiry → organised follow-up</h3>
+<div class="flow-list">
+<span>Website form</span><b>→</b><span>Capture details</span><b>→</b><span>Store / notify</span><b>→</b><span>Follow up</span>
+</div>
+<p>Useful when a team receives leads but someone still has to copy the information, decide who should handle it, and remember the next step.</p>
+</article>
+<article class="example-card">
+<div class="example-heading"><span class="example-icon">02</span><span>Messaging</span></div>
+<h3>WhatsApp enquiry → routed action</h3>
+<div class="flow-list">
+<span>Message</span><b>→</b><span>Classify</span><b>→</b><span>Route</span><b>→</b><span>Reply / notify</span>
+</div>
+<p>Useful when staff repeatedly answer common questions, collect the same information, or manually pass conversations to the next person.</p>
+</article>
+<article class="example-card">
+<div class="example-heading"><span class="example-icon">03</span><span>Documents</span></div>
+<h3>Form submission → document → email</h3>
+<div class="flow-list">
+<span>Form</span><b>→</b><span>Generate</span><b>→</b><span>Save</span><b>→</b><span>Send</span>
+</div>
+<p>Useful when the same information has to be turned into documents, files, emails, or internal records over and over.</p>
+</article>
+<article class="example-card">
+<div class="example-heading"><span class="example-icon">04</span><span>Reporting</span></div>
+<h3>New data → cleaned report → notification</h3>
+<div class="flow-list">
+<span>Collect</span><b>→</b><span>Clean</span><b>→</b><span>Summarise</span><b>→</b><span>Notify</span>
+</div>
+<p>Useful when a person regularly prepares the same report or checks the same data before someone else can act on it.</p>
+</article>
+</div>
+</div>
+</section>
+<section class="section section-dark process-section" id="process">
+<div class="container">
+<div class="section-heading dark-heading section-heading-split">
+<div>
+<p class="eyebrow">How it works</p>
+<h2>From manual task to working system.</h2>
+</div>
+<p>You bring the real-world process. I map it, design the automation, build it, test it, and refine it around the way you actually work.</p>
+</div>
+<div class="process-grid">
+<article class="process-step">
+<span class="process-number">01</span>
+<span class="process-tag">Understand</span>
+<h3>Map the problem</h3>
+<p>We identify what happens manually, which tools are involved, and where time, consistency, or follow-up is being lost.</p>
+</article>
+<article class="process-step">
+<span class="process-number">02</span>
+<span class="process-tag">Design</span>
+<h3>Design the workflow</h3>
+<p>I turn the process into clear steps, rules, integrations, and handoffs that fit your existing setup.</p>
+</article>
+<article class="process-step">
+<span class="process-number">03</span>
+<span class="process-tag">Deliver</span>
+<h3>Build, test &amp; refine</h3>
+<p>The workflow is implemented, tested, and adjusted until it is practical to use in day-to-day operations.</p>
+</article>
+</div>
+</div>
+</section>
+<section class="section pricing-section" id="pricing">
+<div class="container">
+<div class="section-heading section-heading-split">
+<div>
+<p class="eyebrow">How projects are scoped</p>
+<h2>Quoted around the workflow, not a rigid package.</h2>
+</div>
+<p>Every business process is different. A quote is based on the workflow, the systems involved, the number of steps, and the amount of testing or ongoing support needed.</p>
+</div>
+<div class="engagement-grid">
+<article class="engagement-card">
+<span class="engagement-number">01</span>
+<h3>Single workflow</h3>
+<p>One repetitive process automated from start to finish.</p>
+<span class="engagement-use">Good starting point for a focused bottleneck.</span>
+</article>
+<article class="engagement-card engagement-card-featured">
+<span class="engagement-number">02</span>
+<h3>Connected system</h3>
+<p>Several tools and actions connected into one end-to-end workflow.</p>
+<span class="engagement-use">Useful when the process crosses teams or platforms.</span>
+</article>
+<article class="engagement-card">
+<span class="engagement-number">03</span>
+<h3>Ongoing support</h3>
+<p>Monitoring, troubleshooting, updates, backups, and workflow improvements as needs change.</p>
+<span class="engagement-use">Available when the automation becomes part of daily operations.</span>
+</article>
+</div>
+<div class="pricing-note">
+<span aria-hidden="true" class="note-mark">✦</span>
+<p>The aim is a practical system you can understand and keep using—not unnecessary complexity or a solution that forces your business to change how it works.</p>
+</div>
+</div>
+</section>
+<section class="section section-soft faq-section" id="faq">
+<div class="container faq-layout">
+<div class="section-heading">
+<p class="eyebrow">Before we start</p>
+<h2>A few practical questions.</h2>
+<p>You do not need to understand the technology first. The first conversation is about your current process and what you want to change.</p>
+</div>
+<div class="faq-list">
+<details>
+<summary>Do I need to know exactly what technology I need?</summary>
+<p>No. Explain the current process and the result you want. The technical approach can be worked out from there.</p>
+</details>
+<details>
+<summary>Can you work with the tools we already use?</summary>
+<p>That is the starting point. The goal is usually to connect the tools already in place before introducing unnecessary new software.</p>
+</details>
+<details>
+<summary>What kinds of businesses are a good fit?</summary>
+<p>Businesses with recurring admin, enquiries, data handling, document work, reporting, or customer messaging are often a natural fit for workflow automation.</p>
+</details>
+<details>
+<summary>Can automation include a human step?</summary>
+<p>Yes. Good automation does not have to remove people from the process. It can prepare information, route work, ask for approval, and leave the final decision with a person.</p>
+</details>
+<details>
+<summary>What happens after I send an enquiry?</summary>
+<p>I review the process you described, clarify the important details, and use that conversation to determine whether there is a sensible automation to build.</p>
+</details>
+</div>
+</div>
+</section>
+<section class="section contact-section" id="contact">
+<div class="container contact-layout">
+<div class="contact-intro">
+<p class="eyebrow">Start a conversation</p>
+<h2>Tell me about the task you wish you never had to do manually again.</h2>
+<p>You do not need a technical brief. Describe what happens today, what you would like to improve, and which tools are involved. That is enough to start.</p>
+<div class="contact-links">
+<a class="contact-link" href="mailto:ameenziyad9@gmail.com">
+<span aria-hidden="true" class="contact-icon">@</span>
+<span class="contact-link-copy">
+<span class="contact-label">Email</span>
+<span>ameenziyad9@gmail.com</span>
+</span>
+<span aria-hidden="true" class="contact-link-arrow">↗</span>
+</a>
+<a aria-label="Open WhatsApp" class="contact-link" href="https://wa.me/601153152511" rel="noopener noreferrer" target="_blank" title="WhatsApp">
+<span aria-hidden="true" class="contact-icon whatsapp-mark">◌</span>
+<span class="contact-link-copy">
+<span class="contact-label">WhatsApp</span>
+<span>Message me directly</span>
+</span>
+<span aria-hidden="true" class="contact-link-arrow">↗</span>
+</a>
+</div>
+</div>
+<div class="contact-card">
+<div class="contact-card-top">
+<span class="contact-card-label">Project enquiry</span>
+<span class="contact-card-status"><span aria-hidden="true"></span><span>You can describe it in plain language</span></span>
+</div>
+<form id="contactForm" novalidate="">
+<div class="form-group">
+<label for="name">Your name</label>
+<input autocomplete="name" id="name" maxlength="100" name="name" placeholder="Your name" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="message">What would you like to automate?</label>
+<textarea id="message" maxlength="5000" name="message" placeholder="For example: I receive customer enquiries through WhatsApp and manually move the details into a spreadsheet..." required="" rows="8"></textarea>
+<p class="field-hint">No technical explanation needed. Just describe the current process in your own words.</p>
+</div>
+<button class="button button-primary button-full" id="submitButton" type="submit">Send enquiry</button>
+<p aria-live="polite" class="response-message" id="responseMessage"></p>
+</form>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container footer-inner">
+<p>© <span id="currentYear"></span> <span>Ziyad Automates</span></p>
+<p>Practical automation. Built around your workflow.</p>
+</div>
+</footer>
+<script defer="" src="script.js"></script>
 </body>
 </html>
